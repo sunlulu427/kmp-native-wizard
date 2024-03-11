@@ -30,7 +30,10 @@ kotlin {
         }
     }
     sourceSets {
-        val nativeMain by getting
+        val nativeMain by getting {
+            dependencies {
+            }
+        }
         val nativeTest by getting
     }
 }
