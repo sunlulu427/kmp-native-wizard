@@ -5,4 +5,11 @@ pluginManagement {
     }
 }
 
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+    }
+}
+
 rootProject.name = "KotlinNativeTemplate"
+include(":wizard")
