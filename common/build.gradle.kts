@@ -16,18 +16,10 @@ kotlin {
     }
 
     nativeTarget.apply {
-        binaries {
-            executable {
-                entryPoint = "main"
-            }
-        }
-    }
-    sourceSets {
-        val nativeMain by getting {
+        sourceSets.nativeMain {
             dependencies {
-                implementation(project(":common"))
+                implementation(kotlin("stdlib-common"))
             }
         }
-        val nativeTest by getting
     }
 }
