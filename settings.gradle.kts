@@ -16,4 +16,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "KotlinNativeTemplate"
 include(":wizard")
-include(":common")
+include(":base")

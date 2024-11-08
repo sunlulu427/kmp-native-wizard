@@ -1,4 +1,4 @@
-package common
+package base
 
 /**
  * @author sunlulu.tomato
@@ -13,7 +13,7 @@ object Logging {
         WARNING("\u001B[33m"),
         ERROR("\u001B[31m");
 
-        fun format(tag: String, message: String): String {
+        internal fun format(tag: String, message: String): String {
             return "${color}[${name.first()}] $tag: ${message}\u001B[0m"
         }
     }
